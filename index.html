@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>DevMedia</title>
+    <link rel="stylesheet" href="style.css">
+    <script src='script.js' defer></script>
+</head>
+<body>
+
+<header class="menu-navegacao">
+    <img src="static/devmedialogo.png" alt="Logotipo" class="logo">
+    <nav class="menu">
+        <a href="https://www.devmedia.com.br/artigos/iniciantes">Artigos</a>
+        <a href="https://www.devmedia.com.br/cursos/">Cursos</a>
+        <a href="https://www.devmedia.com.br/depoimentos/">Casos de sucesso</a>
+    </nav>
+    <button class="menu-button" onclick="exibirFormulario()">Comece agora</button>
+</header>
+
+<div class="container">
+    <h2><Única escola de programação especializada em quem está começando do zero, aqui todo mundo aprende./></h2>
+    <button onclick="exibirFormulario()">Comece agora</button>
+</div>
+
+<div id="overlay"></div>
+
+<div id="popupForm">
+    <h3>Preencha o Formulário</h3>
+    <form>
+        <label for="nome"></label>
+        <input type="text" id="nome" name="nome" placeholder="Nome"><br><br>
+        <label for="email"></label>
+        <input type="email" id="email" name="email" placeholder="Email"><br><br>
+        <input type="submit" value="Enviar">
+        <button type="button" onclick="fecharFormulario()">Cancelar</button>
+    </form>
+</div>
+
+<div class="blocos-container">
+    <div class="bloco">
+        <b>Progressão</b> <br>
+        <br> 
+        Nos preocupamos em construir uma boa base para que o aluno desenvolva sua mente programadora.
+    </div>
+    <div class="bloco">
+        <b>Prática</b> <br>
+        <br>
+        Projetos práticos e muitos exercícios em todas as etapas garantindo ao aluno um conhecimento sólido.
+    </div>
+    <div class="bloco">
+        <b>Autonomia</b> <br>
+        <br>
+        Ensina a usar as tecnologias para os alunos ganharem a capacidade de montar seus projetos com total autonomia.
+    </div>
+</div>
+
+<div class="calculadora-preco">
+    <h2>Decida em quanto tempo quer estudar</h2>
+    <p>
+        <input id="inputMeses" placeholder="Insira a quantidade de meses" type="number" />
+        meses de aprendizado em programação, você investe apenas R$
+        <output id="outputPreco">0</output>
+        reais.
+    </p>
+</div>
+</body>
+</html>
